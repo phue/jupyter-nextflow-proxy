@@ -7,18 +7,15 @@ Spawn nextflow pipelines from Jupyter and monitor them.
 For instance, a shiny app:
 
 ```groovy
-process COMMS {
-    tag "localhost:${params.COMMS.port}"
-
-    when:
-        params.COMMS.enabled
+process SHINY {
+    tag "localhost:${params.PORT}"
 
     input:
         env(SHINY_APP_DATA)
 
     script:
         """
-        shiny run --port=${params.COMMS.port} app.py
+        shiny run --port=${params.PORT} app.py
         """
 }
 ```
