@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
   name="jupyter-nextflow-proxy",
-  version='0.2.0',
+  version='0.3.0',
   url="https://github.com/phue/jupyter-nextflow-proxy",
   description="Jupyter extension to proxy nextflow",  
   author="Patrick Hüther",
